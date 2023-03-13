@@ -1,0 +1,14 @@
+n = int(input("Ingrese un numero: "))   #leemos un num entero
+sw=True
+if n>0:                             #para verificar que sea un numero positivo
+    for i in range(2, n):
+        if n%i==0:
+            print("NO es primo")
+            sw=False
+            break                     #sale (rompe) el bucle (for)
+    if sw:
+        print("Es primo")
+elif n==1:
+    print("El num 1 no es considerado ni primo ni compuesto")
+else:
+    print("Ingrese un numero mayor a cero!!!")
